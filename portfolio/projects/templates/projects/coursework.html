@@ -1,0 +1,31 @@
+{% extends 'projects/base.html'%}
+{% block content %}
+
+<div style ="background-color: black;" class="jumbotron text-center typewritter">
+  <h1 style ="color: white;" class="typewritter-text">Coursework</h1>
+  <p style ="color: white;"class="lead"> This displays some of the work I have done while attendng Kennesaw State University</p>
+</div>
+
+
+<div style ="background-color: black;" class="jumbotron text-left typewritter">
+  <h2 style ="color: white;">IT 4203</h1>
+  <p style ="color: white;"class="lead">Advanced Web Development focuses on single-page web applications and APIs. It uses jQuery,JSON,and AJAX as tools to advance student's web development skills.</p>
+  <p style ="color: white;" >Milestone 1</h2> 
+    <ul style ="color: white;" >
+      <li><a href="{%url 'projects:googleList'%}">Google Book List</a></li>
+      <li><a href="{%url 'projects:googleSingle'%}">Google Book Single</a></li>
+      <li>IT Books List</li>
+      <li>IT Books Single</li>
+      
+    </ul>  
+  <p style ="color: white;" >Milestone 2</h2> </p>
+  <ul style ="color: white;" >
+    <li><a href="{%url 'projects:googleList'%}">Google Book Search</a></li>
+    <li><a href="{%url 'projects:singleBookDetails'%}">Google Book Details Single</a></li>
+    <li><a href="{%url 'projects:googleBookshelf'%}">Google Bookshelf</a></li>
+   
+    
+</div>
+
+
+{% endblock %}

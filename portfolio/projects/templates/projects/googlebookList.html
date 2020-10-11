@@ -1,0 +1,36 @@
+{% extends 'projects/base.html'%}
+{% block content %}
+{% load static %}
+
+<div style ="background-color: black;" class="jumbotron text-center typewritter">
+    <h1 style ="color: white;" class="typewritter-text">Book Search</h1>
+    <p style ="color: white;"class="lead"> Search for any book below!</p>
+    <div id="search" class="#f5f5f5 grey lighten-4 z-depth-5">
+		<form id="myform" autocomplete="on">
+			<div class="input-field">
+				<input type="search" id="books" placeholder="Enter Search here">
+				<button class="btn red"  style ="color: white;">Search Books</button>
+			</div>
+			
+		</form>
+	</div>
+
+  <div class="book-list">
+      <h2  style ="color: white;" class="text-text">Search Results</h2>
+    </div>
+	<div id="result">
+		
+	</div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script src="{% static 'portfolio/googlesearch.js' %}"></script>
+  </div>
+  
+
+
+
+  
+
+{% endblock %}
+
+

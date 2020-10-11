@@ -1,0 +1,31 @@
+{% extends 'projects/base.html'%}
+{% block content %}
+{% load static %}
+
+<div style ="background-color: black;" class="jumbotron text-center typewritter">
+    <h1 style ="color: white;" class="typewritter-text">Single Book Result</h1>
+  
+    
+	<div id="result">
+
+    </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script src="{% static 'portfolio/singleBookDetails.js' %}"></script>
+      
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

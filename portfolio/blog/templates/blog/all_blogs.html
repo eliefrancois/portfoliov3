@@ -1,0 +1,21 @@
+{% extends 'projects/base.html'%}
+{% block content %}
+
+<div style ="background-color: black;" class="jumbotron text-center typewritter">
+  <h1 style ="color: white;" class="typewritter-text">My Blogs</h1>
+  <p style ="color: white;"class="lead">In today's world internet is the most popular way of connecting with the people...</p>
+</div>
+
+
+<h2  style ="color: white;" >{{ blogs.count }} blog{{ blogs.count| pluralize }}</h2>
+
+{% for blog in blogs %}
+
+<a href="{% url 'blog:detail' blog.id %}"><h2  style ="color: white;" >{{blog.title}}</h2></a>
+<h5  style ="color: white;" >{{blog.date| date:"M d Y"}}</h5>
+<br>
+<p  style ="color: white;" >{{blog.description| truncatechars:100 }}</p>
+
+<br>
+{% endfor %}
+{% endblock %}

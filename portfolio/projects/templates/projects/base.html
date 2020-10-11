@@ -1,0 +1,44 @@
+{% load static %}
+
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+  <title>Elie Francois</title>
+  <link rel="icon" type='image/png' href="{% static 'portfolio/ef-brand.png' %}" style="width:25">
+
+
+
+</head>
+<style>
+  body {background-color:black;}
+  text center {background-color: black}
+</style>
+
+<body>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{%url 'home'%}">
+   <img src="{% static 'portfolio/ef-brand.png' %}" height="40" class="d-inline-block align-top"
+      alt="mdb logo">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active text-dark " href="{%url 'blog:all_blogs'%}" >Blogs</a>
+      <a class="nav-item nav-link text-dark" href="{% static 'portfolio/05_21_20 Elie Francois Resume.pdf' %}" target='_blank'>Resume</a>
+      <a class="nav-item nav-link text-dark" href="https://www.linkedin.com/in/elie-francois-1b0a4118a/" target='_blank'>LinkedIn</a>
+      <a class="nav-item nav-link active text-dark " href="{%url 'projects:IT4203'%}" >Coursework</a>
+    </div>
+  </div>
+</nav>
+
+
+</body>
+
+
+
+
+{% block content %} {% endblock %}
